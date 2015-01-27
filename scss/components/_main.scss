@@ -20,6 +20,7 @@ html {
 
 body{
   font-family: $lato;
+  background-color: $green;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
@@ -39,39 +40,65 @@ header {
   top: 0;
 }
 
+.list-heading{
+  font-family: $lato;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: $white;
+  text-transform: uppercase;
+}
+
 .navigation ul{
   @include zero;
   li{
     list-style-type: none;
     &:first-child a{
-      border-top: 1px solid $light-grey;
+      border-top: 1px solid $white;
     }
     a{
-      display: block;
-      padding: .5em 1em;
-      text-align: center;
-      border-bottom: 1px solid $light-grey;
+      font-family: $lato;
+      font-weight: 300;
+      letter-spacing: 3px;
+      color: $white;
+      text-transform: lowercase;
       text-decoration: none;
+      display: block;
+      padding: 1em 1em;
+      text-align: center;
     }
   } // li
 } // .navigation ul
 
 .toggle-btn,
 .close-btn{
-  color: $text-color;
+  color: $white;
   height: 40px;
   width: 40px;
   span{
     @include hide-text;
   }
   i{
-    border: 1px solid $text-color;
+    border: px solid $white;
     padding: .5em;
   }
 }
 
 .close-btn{
   margin: 1em;
+}
+
+.donate-btn{
+  font-family: $lato;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 1em 1em;
+  text-align: center;
+  padding: .5em;
+  border: 2px solid $white;
 }
 
 @media only screen and (max-width: 60em){
